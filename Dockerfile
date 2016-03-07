@@ -1,6 +1,4 @@
-FROM golang
-
-VOLUME /opt
+FROM golang:1.5.2
 
 RUN apt-get update && apt-get install -y wget git make ; \
         export PATH=$GOROOT/bin:$GOPATH/bin:$PATH ; 
